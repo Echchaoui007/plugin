@@ -1,15 +1,20 @@
-# plugin
-## Installation de WordPress
-J'ai telecharger le fichier zip de WordPress et j'ai le décompressé dans le dossier qui j'ai cloné d'apres cette repository (le nom de dossier est plugin) dans le dossier htdocs dans xampp.
-## Creation de base de donnée Et connection entre la base de donnée et le dossier "plugin"
-J'ai créé une base de donnée et "plugin" sont nom. Puis j'ai connect la base de donnée avec le dossier "plugin" en suivant les étapes de WordPress
-## Installation des extensions
-J'ai installé l'extension Elementor pour faciliter création des pages
-## Creation ma extensien
-### l'extensien signal 
-J'ai créé l'extensien signal. L'extension "Signal" pour WordPress est un outil qui permet aux administrateurs de sites Web WordPress de collecter des signaux (ou feedback) de leurs utilisateurs. Cette extension permet aux utilisateurs d'envoyer des signaux sur le contenu du site, les fonctionnalités ou tout autre aspect de l'expérience utilisateur. Lorsqu'un utilisateur envoie un signal, l'extension enregistre les détails du signal dans une base de données. Les informations collectées peuvent inclure le nom de l'utilisateur, son adresse e-mail, la date et l'heure à laquelle le signal a été envoyé et le contenu du signal lui-même. Les administrateurs peuvent voir tous les signaux qui ont été soumis via l'interface d'administration de WordPress. L'extension "Signal" pour WordPress est un excellent outil pour collecter des commentaires et des suggestions d'utilisateurs sur un site Web. Elle permet aux administrateurs de comprendre les besoins et les préférences de leur public cible, ce qui peut les aider à améliorer l'expérience utilisateur et à optimiser leur site Web pour répondre aux besoins des utilisateurs.
-### l'extensien login 
-J'ai créé l'extensien login qui fait login des utilisateurs
-## Activation mes extensiens
-J'ai appuié sur activer pour les activés
-## Utilisation ma extensien
+Signal WordPress Plugin
+This WordPress plugin, named "Signal," allows users to create custom forms to gather information about signals. The plugin includes a shortcode that can be used to display the form on any WordPress page or post. The submitted form data is stored in a database table.
+
+Features
+Create custom forms with various input fields
+Store submitted form data in a database table
+Display the form using a shortcode
+Manage form data in the admin dashboard
+How it works
+The code creates a custom WordPress plugin with the following functionality:
+
+Activation and deactivation hooks: The plugin creates a new table in the WordPress database when activated and drops the table when deactivated.
+Admin menu pages: The plugin adds two menu pages in the admin dashboard, one for creating the form and another for displaying the stored form data.
+Form creation: The plugin provides an interface in the admin dashboard to create a custom form with various input fields.
+Shortcode: The plugin registers a shortcode [form_signal] that can be used to display the created form on any WordPress page or post.
+Form submission: The plugin handles form submissions and stores the submitted data in the database table.
+Displaying form data: The plugin provides an interface in the admin dashboard to display the stored form data in a table.
+Usage
+Install and activate the plugin in your WordPress site.
+Go to the "Signal" menu page in the admin dashboard to
